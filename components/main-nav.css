@@ -1,0 +1,47 @@
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.main-nav a:hover {
+  color: #58C93A;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    left: 0;
+    background-color: #282c34;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .main-nav.active ul {
+    display: flex;
+  }
+}
