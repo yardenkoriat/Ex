@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design2Live Page</title>
-<link rel="stylesheet" href="style.css/">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
 
-    <header class="main- header">
+    <header class="main-header">
         <div class="logo">Design2Live</div>
         <button class="menu-btn">☰</button>
             <nav class="main-nav">
@@ -19,9 +19,20 @@
                     <li><a href="#">Jornal</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-
+            </nav>
     </header>
    
+    <main class="main-content">
+      <section class="gallery">
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Example image" />
+          <h3>Mountain Escape</h3>
+          <p>Feel the thrill of adventure in every ride.</p>
+          <button>Read more</button>
+        </article>
+      </section>
+    </main>
+  
     <script>
       const btn = document.querySelector('.menu-btn')
       const nav = document.querySelector('.main-nav')
@@ -30,6 +41,6 @@
         nav.classList.toggle('active')
       })
     </script>
-    
+
     </body>
 </html>
